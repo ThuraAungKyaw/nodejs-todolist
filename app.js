@@ -13,7 +13,7 @@ PORT = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('public'));
 const passwd = 'Developer01#'
-mongoose.connect(`mongodb+srv://Thura_Aung_Kyaw:Developer01%23@cluster0.qeqwa.mongodb.net/todolistDB`);
+mongoose.connect(`mongodb+srv://localhost:27044/todolistDB`);
 
 
 const ToDoItem = mongoose.model("Item", Schema.todoitem);
